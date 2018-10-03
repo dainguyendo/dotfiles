@@ -58,13 +58,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z npm)
+plugins=(
+  git
+  npm
+  z
+  zsh-syntax-highlighting
+  brew
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-autoload -U promptinit; promptinit
-prompt pure
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -77,11 +81,6 @@ prompt pure
 # else
 #   export EDITOR='mvim'
 # fi
-
-if command -v brew >/dev/null 2>&1; then
-	# Load rupa's z if installed
-	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -97,3 +96,12 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fpath=($fpath "/Users/dnguyendo/.zfunctions")
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
