@@ -1,0 +1,29 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "editor.fontSize": 11,
+    "editor.fontFamily": "Meslo LG S DZ for Powerline",
+    "editor.wordWrap": "on",
+    "workbench.editor.enablePreview": false,
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "material-icon-theme.folders.color": "#42a5f5",
+    "window.zoomLevel": -1,
+    "materialTheme.fixIconsRunning": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.cursorBlinking": "phase",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.openPositioning": "last",
+    "window.newWindowDimensions": "inherit",
+    "search.location": "panel",
+    "workbench.activityBar.visible": false
+}
